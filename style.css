@@ -1,0 +1,158 @@
+*{
+	box-sizing: border-box;
+	list-style: none;
+}
+
+
+
+body{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 15px;
+	background-color: hsl(216, 12%, 8%);
+	font-family: 'Overpass', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+:root{
+	--orange: hsl(25, 97%, 53%);
+	--White: hsl(0, 0%, 100%);
+	--light-grey: hsl(217, 12%, 63%);
+	--medium-grey: hsl(216, 12%, 54%);
+	--dark-blue: hsl(213, 19%, 18%);
+	--very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+.main-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	background-color: hsl(213, 19%, 18%);
+	height: 25em;
+	width: 30em;
+	color: hsl(217, 12%, 63%);
+	margin: 5em 0;
+	padding: 2em;
+	border-radius: 1em;
+}
+
+.star{
+	display: flex;
+	background-color: hsl(216, 19%, 23%);
+	padding: .8em;
+	border-radius: 50%;
+	align-items: center;
+	justify-content: center;
+}
+
+.headline{
+	color: white;
+}
+
+.btn-list{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-between;
+	align-items: space-between;
+	margin: 1em 0;
+}
+
+.btn{
+	border: none;
+	width: 4.25em;
+	height: 4.25em;
+	border-radius: 50%;
+	background-color: hsl(216, 19%, 23%);
+	color: hsl(216, 12%, 54%);
+	cursor: pointer;
+	font-weight: bolder;
+}
+
+.btn:hover{
+	background-color: hsl(217, 12%, 63%);
+	color: white;
+}
+
+.btn:focus{
+	background-color: hsl(25, 97%, 53%);
+	color: white;
+}
+
+.submit{
+	padding: 1em;
+	background-color: hsl(25, 97%, 53%);
+	width: 100%;
+	border: none;
+	border-radius: 5em;
+	color: white;
+	margin: 1em 0;
+	letter-spacing: 0.1rem;
+	cursor: pointer;
+}
+
+.submit:hover{
+	color: hsl(25, 97%, 53%);
+	background-color: white;
+}
+
+
+
+
+
+
+
+
+
+.second-container{
+	display: none;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	background-color: hsl(213, 19%, 18%);
+	height: 25em;
+	width: 30em;
+	color: hsl(217, 12%, 63%);
+	margin: 5vh 0;
+	padding: 2.5em 2em;
+	border-radius: 1em;
+}
+
+.rating{
+	background-color: hsl(216, 19%, 23%);
+	color: var(--orange);
+	padding: 0.5rem 1rem;
+	border-radius: 1.5em;
+}
+
+
+.footer{
+	color: white;
+}
+
+.links{
+	color: var(--orange);
+	text-decoration: none;
+	font-weight: bolder;
+}
+
+.links:hover{
+	color: var(--light-grey);
+}
+
+
+@media screen and (max-width: 445px) {
+	.main-container, .second-container{
+		width: 90vw;
+		height: 65vh;
+	}
+
+	.btn{
+		width: 3em;
+		height: 3em;
+	}
+}
